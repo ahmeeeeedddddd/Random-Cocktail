@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>using pubic API</title>
+    <style>
+        body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      background-color: #30223a;
+    }
+    button {
+      margin: 10px;
+      padding: 15px 30px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+    }
+    #cocktail{
+        background-color: #000000
+    }
+    img {
+  border-radius: 8px;
+  height: 200px;
+  width: 200px;
+   }
+    </style>
+</head>
+<body>
+    <button id="cocktail" onclick="window.location.href='/getcocktail'">Get a cocktail !</button>
+    <img src= "<%= image %>" class="rounded mx-auto d-block"  alt="Cocktail Image">
+    <h2><%= title %></h2>
+    <h2>
+
+    <ul>
+          
+            <li><%= me %> <%= ing %></li>
+            <li><%= me1 %> <%= ing1 %></li>
+            <li><%= me2 %> <%= ing2 %></li>
+           
+    </ul>
+ </h2>
+</body>
+</html>
